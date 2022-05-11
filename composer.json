@@ -1,5 +1,5 @@
 {
-  "name": "dnxlabs/laravel-queue-aws-batch",
+  "name": "sphtech/laravel-queue-aws-batch",
   "description": "Laravel Queue for AWS Batch, enabling users to submit jobs for processing to a Batch queue.",
   "keywords": [
     "laravel",
@@ -10,7 +10,7 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "DNXLabs\\LaravelQueueAwsBatch\\": "src/"
+      "SPHTech\\LaravelQueueAwsBatch\\": "src/"
     }
   },
   "autoload-dev": {
