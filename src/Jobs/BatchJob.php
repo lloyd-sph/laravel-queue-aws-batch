@@ -9,7 +9,7 @@
  * @link      https://github.com/dnxlabs/laravel-queue-aws-batch
  */
 
-namespace DNXLabs\LaravelQueueAwsBatch\Jobs;
+namespace SPHTech\LaravelQueueAwsBatch\Jobs;
 
 use Illuminate\Queue\Jobs\DatabaseJob;
 use SPHTech\LaravelQueueAwsBatch\Exceptions\UnsupportedException;

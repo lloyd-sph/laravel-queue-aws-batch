@@ -6,7 +6,7 @@
  * @copyright 2017 Luke Waite
  * @license   http://www.opensource.org/licenses/mit-license.php MIT
  *
- * @link      https://github.com/dnxlabs/laravel-queue-aws-batch
+ * @link      https://github.com/sphtech/laravel-queue-aws-batch
  */
 
 namespace SPHTech\LaravelQueueAwsBatch\Connectors;

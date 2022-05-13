@@ -18,10 +18,9 @@ use Illuminate\Queue\Console\WorkCommand;
 use Illuminate\Queue\QueueManager;
 use Illuminate\Queue\Worker;
 use Illuminate\Queue\WorkerOptions;
-use DNXLabs\LaravelQueueAwsBatch\Exceptions\JobNotFoundException;
-use DNXLabs\LaravelQueueAwsBatch\Exceptions\UnsupportedException;
-use DNXLabs\LaravelQueueAwsBatch\Queues\BatchQueue;
-use SPHTech\Component\Debug\Exception\FatalThrowableError;
+use SPHTech\LaravelQueueAwsBatch\Exceptions\JobNotFoundException;
+use SPHTech\LaravelQueueAwsBatch\Exceptions\UnsupportedException;
+use SPHTech\LaravelQueueAwsBatch\Queues\BatchQueue;
 
 class QueueWorkBatchCommand extends WorkCommand
 {
@@ -61,7 +60,7 @@ class QueueWorkBatchCommand extends WorkCommand
             $this->exceptions->report($e);
             throw $e;
         } catch (\Throwable $e) {
-            $this->exceptions->report(new FatalThrowableError($e));
+            $this->exceptions->report($e);
             throw $e;
         }
     }

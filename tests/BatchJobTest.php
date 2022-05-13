@@ -1,8 +1,8 @@
 <?php
 
-namespace DNXLabs\LaravelQueueAwsBatch\Tests;
+namespace SPHTech\LaravelQueueAwsBatch\Tests;
 
-use DNXLabs\LaravelQueueAwsBatch\Exceptions\UnsupportedException;
+use SPHTech\LaravelQueueAwsBatch\Exceptions\UnsupportedException;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 
@@ -21,10 +21,10 @@ class BatchJobTest extends TestCase
         $this->job->queue = 'default';
         $this->job->attempts = 1;
 
-        /** @var \DNXLabs\LaravelQueueAwsBatch\Jobs\BatchJob $batchJob */
-        $this->batchJob = $this->getMockBuilder('DNXLabs\LaravelQueueAwsBatch\Jobs\BatchJob')->setMethods(null)->setConstructorArgs([
+        /** @var \SPHTech\LaravelQueueAwsBatch\Jobs\BatchJob $batchJob */
+        $this->batchJob = $this->getMockBuilder('SPHTech\LaravelQueueAwsBatch\Jobs\BatchJob')->setMethods(null)->setConstructorArgs([
             m::mock('Illuminate\Container\Container'),
-            $this->batchQueue = m::mock('DNXLabs\LaravelQueueAwsBatch\Queues\BatchQueue'),
+            $this->batchQueue = m::mock('SPHTech\LaravelQueueAwsBatch\Queues\BatchQueue'),
             $this->job,
             'testConnection',
             'defaultQueue'
