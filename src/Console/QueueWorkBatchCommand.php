@@ -9,7 +9,7 @@
  * @link      https://github.com/dnxlabs/laravel-queue-aws-batch
  */
 
-namespace DNXLabs\LaravelQueueAwsBatch\Console;
+namespace SPHTech\LaravelQueueAwsBatch\Console;
 
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Cache\Repository;
@@ -21,7 +21,7 @@ use Illuminate\Queue\WorkerOptions;
 use DNXLabs\LaravelQueueAwsBatch\Exceptions\JobNotFoundException;
 use DNXLabs\LaravelQueueAwsBatch\Exceptions\UnsupportedException;
 use DNXLabs\LaravelQueueAwsBatch\Queues\BatchQueue;
-use Symfony\Component\Debug\Exception\FatalThrowableError;
+use SPHTech\Component\Debug\Exception\FatalThrowableError;
 
 class QueueWorkBatchCommand extends WorkCommand
 {

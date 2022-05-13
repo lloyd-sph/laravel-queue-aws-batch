@@ -9,16 +9,16 @@
  * @link      https://github.com/dnxlabs/laravel-queue-aws-batch
  */
 
-namespace DNXLabs\LaravelQueueAwsBatch\Queues;
+namespace SPHTech\LaravelQueueAwsBatch\Queues;
 
 use Aws\Batch\BatchClient;
 use Illuminate\Database\Connection;
 use Illuminate\Queue\DatabaseQueue;
 use Illuminate\Queue\Jobs\DatabaseJobRecord;
 use Illuminate\Support\Str;
-use DNXLabs\LaravelQueueAwsBatch\Exceptions\JobNotFoundException;
-use DNXLabs\LaravelQueueAwsBatch\Exceptions\UnsupportedException;
-use DNXLabs\LaravelQueueAwsBatch\Jobs\BatchJob;
+use SPHTech\LaravelQueueAwsBatch\Exceptions\JobNotFoundException;
+use SPHTech\LaravelQueueAwsBatch\Exceptions\UnsupportedException;
+use SPHTech\LaravelQueueAwsBatch\Jobs\BatchJob;
 
 class BatchQueue extends DatabaseQueue
 {

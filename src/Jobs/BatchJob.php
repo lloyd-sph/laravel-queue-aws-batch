@@ -12,14 +12,14 @@
 namespace DNXLabs\LaravelQueueAwsBatch\Jobs;
 
 use Illuminate\Queue\Jobs\DatabaseJob;
-use DNXLabs\LaravelQueueAwsBatch\Exceptions\UnsupportedException;
+use SPHTech\LaravelQueueAwsBatch\Exceptions\UnsupportedException;
 
 class BatchJob extends DatabaseJob
 {
     /**
      * The database queue instance.
      *
-     * @var \DNXLabs\LaravelQueueAwsBatch\Queues\BatchQueue
+     * @var \SPHTech\LaravelQueueAwsBatch\Queues\BatchQueue
      */
     protected $database;
 

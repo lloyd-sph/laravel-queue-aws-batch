@@ -9,7 +9,7 @@
  * @link      https://github.com/dnxlabs/laravel-queue-aws-batch
  */
 
-namespace DNXLabs\LaravelQueueAwsBatch\Exceptions;
+namespace SPHTech\LaravelQueueAwsBatch\Exceptions;
 
 class UnsupportedException extends LaravelAwsBatchQueueException
 {

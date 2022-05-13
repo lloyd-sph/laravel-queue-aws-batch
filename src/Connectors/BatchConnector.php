@@ -9,12 +9,12 @@
  * @link      https://github.com/dnxlabs/laravel-queue-aws-batch
  */
 
-namespace DNXLabs\LaravelQueueAwsBatch\Connectors;
+namespace SPHTech\LaravelQueueAwsBatch\Connectors;
 
 use Aws\Batch\BatchClient;
 use Illuminate\Queue\Connectors\DatabaseConnector;
 use Illuminate\Support\Arr;
-use DNXLabs\LaravelQueueAwsBatch\Queues\BatchQueue;
+use SPHTech\LaravelQueueAwsBatch\Queues\BatchQueue;
 
 class BatchConnector extends DatabaseConnector
 {

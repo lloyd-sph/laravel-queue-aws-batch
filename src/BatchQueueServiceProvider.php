@@ -9,11 +9,12 @@
  * @link      https://github.com/dnxlabs/laravel-queue-aws-batch
  */
 
-namespace DNXLabs\LaravelQueueAwsBatch;
+namespace SPHTech\LaravelQueueAwsBatch;
 
 use Illuminate\Support\ServiceProvider;
-use DNXLabs\LaravelQueueAwsBatch\Connectors\BatchConnector;
-use DNXLabs\LaravelQueueAwsBatch\Console\QueueWorkBatchCommand;
+use SPHTech\LaravelQueueAwsBatch\Connectors\BatchConnector;
+use SPHTech\LaravelQueueAwsBatch\Console\QueueWorkBatchCommand;
+use Illuminate\Queue\QueueManager;
 
 class BatchQueueServiceProvider extends ServiceProvider
 {
@@ -45,7 +46,7 @@ class BatchQueueServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    protected function registerBatchConnector($manager)
+    protected function registerBatchConnector(QueueManager $manager)
     {
         $manager->addConnector('batch', function () {
             return new BatchConnector($this->app['db']);
